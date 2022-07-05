@@ -1,0 +1,29 @@
+.test__container {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.test {
+}
+.test--item {
+    & > a {
+        text-decoration: none;
+    }
+    display: inline;
+    &:not(:last-child) {
+        margin-right: 15px;
+    }
+}
+h1 {
+        margin-left: auto;
+            margin-right: auto;
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 30px;
+            letter-spacing: 0.06em;
+}
