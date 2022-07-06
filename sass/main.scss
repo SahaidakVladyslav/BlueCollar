@@ -1,3 +1,9 @@
+@import './utils/variables';
 @import './base/normalize';
 @import './base/common';
-@import './components/hat';
+@import './base/fonts';
+@import './components/colors';
+@import './components/mobile--hat';
+@import './components/mobile--modal';
+@import './components/general-hat';
+@import './components/general';
