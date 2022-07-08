@@ -13,98 +13,93 @@
         <h1 hidden>
         BARISTA CUP
         </h1>
-        <svg width="24" height="30">
-            <use href="./assets/icons/search.svg"></use>
-        </svg>
-        <section class="hat__contacts">
-            <h1 class="contacts--logo">
-                BlueCollar
-            </h1>
-            <ul>
-                <li>
-                    <p>
-                        Mail Us
-                    </p>
-                    <a href="mailto:Info@bluecollar.com">
-                        Info@bluecollar.com
-                    </a>
-                </li>
-                <li>
-                    <p>
-                        Call Us
-                    </p>
-                    <a href="tell:+01 569 896 654">
-                        +01 569 896 654
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">
-                        Lorem, ipsum.
-                </a>
-                </li>
-                <li>
-                    <a href="">
-                        Lorem, ipsum.
-                </a>
-                </li>
-                <li>
-                    <a href="">
-                        Lorem, ipsum.
-                </a>
-                </li>
-                <li>
-                    <a href="">
-                        Lorem, ipsum.
-                </a>
-                </li>
-                <li>
-                    <a href="">
-                        Lorem, ipsum.
-                </a>
-                </li>
-            </ul>
-            <button>
-                Have Any Questions?
+        <div class="hat__container--button">
+            <button class="btn--search">
+                <svg width="24" height="30">
+                    <use href="./assets/icons/search.svg#search"></use>
+                </svg>
             </button>
-        </nav>
-        <div class="modal">
-            
+            <button class="menu__btn--open menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-controls="mobile-list">
+                <svg width="28" height="14">
+                    <use href="./assets/icons/burger-menu.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu__btn--close menu-toggle js-close-menu">
+                <svg width="28" height="14">
+                    <use href="./assets/icons/burger-menu.svg#icon-menu_24px"></use>
+                </svg>
+            </button>
+            <div class="container__mobile">
+                <ul>
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            href on our web-site
+                    </a>
+                </li>
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            href on our web-site
+                    </a>
+                </li>
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            href on our web-site
+                    </a>
+                </li>
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            href on our web-site
+                    </a>
+                </li>
+                </ul>
+                <ul class="menu--list js-list-container" id="mobile-list">
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            instagram
+                    </a>
+                    </li>
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            instagram
+                    </a>
+                    </li>
+                    <li>
+                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                            instagram
+                    </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
-    <!-- <section class="test__container">
-        <div class="test">
-            <ul>
-                <li class="test--item">
-                    <a href="google.com" target="_blank">
-                        join us
-                    </a>
-                </li>
-                <li class="test--item">
-                    <a href="google.com" target="_blank">
-                        join us
-                    </a>
-                </li>
-                <li class="test--item">
-                    <a href="google.com" target="_blank">
-                        join us
-                    </a>
-                </li>
-                <li class="test--item">
-                    <a href="google.com" target="_blank">
-                        join us
-                    </a>
-                </li>
-                <li class="test--item">
-                    <a href="google.com" target="_blank">
-                        join us
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section> -->
+    <!-- <footer>
+        <ul>
+            <li>
+                <p>
+                    Mail Us
+                </p>
+                <a href="mailto:Info@bluecollar.com">
+                    Info@bluecollar.com
+                </a>
+            </li>
+            <li>
+                <p>
+                    Call Us
+                </p>
+                <a href="tell:+01 569 896 654">
+                    +01 569 896 654
+                </a>
+            </li>
+        </ul>
+    </footer> -->
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="14" viewBox="0 0 28 14">
-  <path id="Burger_menu" data-name="Burger menu" d="M2078,12h0Zm0-12h0Z" transform="translate(-2078 1)" fill="none" stroke="#fff" stroke-width="2"/>
+<symbol id="icon-menu_24px" viewBox="0 0 48 32">
+<path d="M0 5.334V0h48v5.334H0zm0 13.332h48v-5.332H0v5.332zM0 32h48v-5.334H0V32z"/>
+</symbol>
 </svg>

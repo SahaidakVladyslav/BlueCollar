@@ -1,9 +1,32 @@
 
 @media screen and (min-width: 320px) and (max-width: 1199px) {
     .hat {
-        padding: 30px;
+        padding: 20px;
+        display: flex;
     }
     .hat--logo { 
-        width: 70vw;
-}
+        width: 60vw;
+        margin-right: auto;
+    }
+    .hat__container--button {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .btn--search,
+    .menu__btn--open {
+        background-color: rgba($color: #000000, $alpha: 1.0);
+        height: 16px;
+        border: none;
+    }
+    .btn--search {
+        margin-right: 10px;
+        width: 16px;
+    }
+    .menu__btn--open {
+        width: 24px;
+        & > svg {
+            fill: #fff;
+            margin-left: 5px;
+        }
+    }
 }
