@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Document</title>
 </head>
@@ -79,6 +80,31 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="hero">
+            <div class="hero__container--slider swiper mySwiper">
+                <ul class="slider--list swiper-wrapper">
+                    <li class="slider--item swiper-slide">
+                        <img  class="slider--img" src="./assets/images/hero/imgonline-com-ua-Resize-klBe5rwOemjE4Y.jpg" alt="blablabla1">
+                    </li>
+                    <li class="slider--item swiper-slide">
+                        <img class="slider--img" src="./assets/images/hero/photo_2022-07-09_22-04-05.jpg" alt="blablabla2">
+                    </li>
+                    <li class="slider--item swiper-slide">
+                        <img class="slider--img" src="./assets/images/hero/photo_2022-07-09_22-04-08.jpg" alt="blablabla3">
+                    </li>
+                </ul>
+                <div class="slider--btn swiper-button-next">
+                    
+                </div>
+                <div class="slider--btn swiper-button-prev">
+                    <svg class="my-svg">
+                        <use href="./assets/icons/arrow-left.svg#Path_10"></use>
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- <footer>
         <ul>
             <li>
@@ -101,5 +127,16 @@
     </footer> -->
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            rewind: true,
+            speed: 2000,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 </html>

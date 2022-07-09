@@ -343,3 +343,25 @@ pre {
 body {
   background-color: #ffffff;
 }
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .slider--img {
+    width: 100vw;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .slider-btn > svg {
+    fill: aliceblue !important;
+  }
+
+  .swiper-button-prev:after {
+    display: none;
+  }
+
+  .my-svg {
+    fill: #fff;
+  }
+}

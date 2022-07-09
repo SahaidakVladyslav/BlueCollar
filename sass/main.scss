@@ -3,7 +3,8 @@
 @import './base/common';
 @import './base/fonts';
 @import './components/colors';
-@import './components/mobile--hat';
-@import './components/mobile--modal';
+@import './components/mobile--hat/mobile--hat';
+@import './components/mobile--hat/mobile--modal';
 @import './components/general-hat';
 @import './components/general';
+@import './components/mobile--main/mobile--hero';
