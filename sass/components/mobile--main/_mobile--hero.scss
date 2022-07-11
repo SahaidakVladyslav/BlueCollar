@@ -12,11 +12,15 @@
         }
     }
     
-    .swiper-button-prev:after {
-        display: none;
+    .swiper-button-next {
+        top: 120px;
+        }
+    .swiper-button-prev{
+        top: 150px;
     }
     .my-svg {
         fill: #fff;
+        min-width: 35px;
     }
 
 }

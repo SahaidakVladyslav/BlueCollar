@@ -257,12 +257,10 @@ pre {
     display: -ms-flexbox;
     display: flex;
   }
-
   .hat--logo {
     width: 60vw;
     margin-right: auto;
   }
-
   .hat__container--button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -271,19 +269,16 @@ pre {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-
   .btn--search,
 .menu__btn--open {
     background-color: black;
     height: 16px;
     border: none;
   }
-
   .btn--search {
     margin-right: 10px;
     width: 16px;
   }
-
   .menu__btn--open {
     width: 24px;
   }
@@ -340,6 +335,11 @@ pre {
   background-color: #000000;
 }
 
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
+}
+
 body {
   background-color: #ffffff;
 }
@@ -352,16 +352,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
-
   .slider-btn > svg {
     fill: aliceblue !important;
   }
-
-  .swiper-button-prev:after {
-    display: none;
+  .swiper-button-next {
+    top: 120px;
   }
-
+  .swiper-button-prev {
+    top: 150px;
+  }
   .my-svg {
     fill: #fff;
+    min-width: 35px;
   }
 }
