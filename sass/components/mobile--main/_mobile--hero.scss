@@ -1,4 +1,5 @@
 @media screen and (min-width: 320px) and (max-width: 1199px) {
+   
     .slider--img {
         width: 100vw;
         height: auto;
@@ -22,5 +23,40 @@
         fill: #fff;
         min-width: 35px;
     }
-
+  
+    .slider--label {
+        position: absolute;
+        bottom: 0;
+        right: 22.4%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 55vw;
+        background-color: $color-dark;
+        background-image: linear-gradient(to bottom,
+            #000000 0%,
+            #000000 99%,
+            #ffffff 99%,
+            #ffffff 100%);
+        color: $color-white;
+        text-align: center;
+    }
+    .slider--label--test {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        color: #ffffff;
+        background-image: linear-gradient(to bottom,
+            #ffffff 0%,
+            #ffffff 1%,
+            #000000 1%,
+            #000000 100%);
+            width: 55vw;
+    }
+    .hero__container--slider.swiper.mySwiper {
+        z-index: 0;
+    }
+    .slider--list.swiper-wrapper {
+        z-index: 0;
+    }
 }
