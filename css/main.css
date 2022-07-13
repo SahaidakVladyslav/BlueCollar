@@ -170,7 +170,7 @@ svg {
 }
 
 h1 {
-  font-family: TimesNewRoman;
+  font-family: Times New Roman;
   font-size: 40px;
   font-style: normal;
   font-variant: normal;
@@ -179,7 +179,7 @@ h1 {
 }
 
 h2 {
-  font-family: TimesNewRoman;
+  font-family: Times New Roman;
   font-size: 35px;
   font-style: normal;
   font-variant: normal;
@@ -188,7 +188,7 @@ h2 {
 }
 
 h3 {
-  font-family: TimesNewRoman;
+  font-family: Times New Roman;
   font-size: 30px;
   font-style: normal;
   font-variant: normal;
@@ -197,7 +197,7 @@ h3 {
 }
 
 h4 {
-  font-family: TimesNewRoman;
+  font-family: Times New Roman;
   font-size: 25px;
   font-style: normal;
   font-variant: normal;
@@ -206,7 +206,7 @@ h4 {
 }
 
 h5 {
-  font-family: TimesNewRoman;
+  font-family: Times New Roman;
   font-size: 20px;
   font-style: normal;
   font-variant: normal;
@@ -215,7 +215,7 @@ h5 {
 }
 
 h6 {
-  font-family: TimesNewRoman;
+  font-family: Times New Roman;
   font-size: 18px;
   font-style: normal;
   font-variant: normal;
@@ -224,7 +224,7 @@ h6 {
 }
 
 p {
-  font-family: TimesNewRoman;
+  font-family: Times New Roman;
   font-size: 14px;
   font-style: normal;
   font-variant: normal;
@@ -233,7 +233,7 @@ p {
 }
 
 blockquote {
-  font-family: TimesNewRoman;
+  font-family: Times New Roman;
   font-size: 17px;
   font-style: normal;
   font-variant: normal;
@@ -242,11 +242,20 @@ blockquote {
 }
 
 pre {
-  font-family: TimesNewRoman;
+  font-family: Times New Roman;
   font-size: 11px;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
+  line-height: 23px;
+}
+
+b {
+  font-family: Times New Roman;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
   line-height: 23px;
 }
 
@@ -256,6 +265,7 @@ pre {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    border-bottom: 3px solid #000000;
   }
   .hat--logo {
     width: 60vw;
@@ -291,7 +301,7 @@ pre {
 .menu-container {
   z-index: 1;
   position: fixed;
-  top: 0;
+  top: 13%;
   left: 0;
   margin-right: auto;
   margin-left: auto;
@@ -306,6 +316,21 @@ pre {
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
 
+@media screen and (min-width: 450px) and (max-width: 699px) {
+  .menu-container {
+    top: 15%;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .menu-container {
+    top: 18%;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .menu-container {
+    top: 20%;
+  }
+}
 .menu-container.is-open {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
@@ -387,7 +412,7 @@ pre {
   padding-top: 20px;
   padding-right: 40px;
   width: 100vw;
-  height: 20vh;
+  height: 10vh;
   top: 0;
   left: 50%;
   border: none;
@@ -409,16 +434,17 @@ pre {
 }
 
 .container__search--input {
-  position: absolute;
-  top: 10;
   padding-left: 8vw;
+  margin-bottom: 15px;
+}
+.container__search--input > label {
+  position: relative;
 }
 
 .input__serch--svg {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  margin-left: 35px;
+  bottom: -50%;
+  left: 3%;
 }
 
 .search-input {
@@ -429,6 +455,25 @@ pre {
   border-bottom: 2px solid #ffffff;
   background-color: #000000;
   color: #ffffff;
+}
+
+.search__item {
+  padding-left: 8vw;
+  padding-right: 8vw;
+  color: #ffffff;
+}
+.search__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.search__label--data {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.search--label {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .hat {
