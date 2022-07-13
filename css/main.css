@@ -373,18 +373,62 @@ pre {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateY(100);
           transform: translateY(100);
-  -webkit-transition: 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-searching-btn {
-  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-top: 20px;
+  padding-right: 40px;
   width: 100vw;
-  height: 100vh;
-  top: 50%;
+  height: 20vh;
+  top: 0;
   left: 50%;
   border: none;
   background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+.close-searching-btn > svg {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+.close-searching-btn:hover > svg {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.container__search--input {
+  position: absolute;
+  top: 10;
+  padding-left: 8vw;
+}
+
+.input__serch--svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 35px;
+}
+
+.search-input {
+  width: 80vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .hat {

@@ -20,21 +20,28 @@
                     <use href="./assets/icons/search.svg#search"></use>
                 </svg>
             </button>
-            <div class="backdrop is-hidden" searching-data-modal>
-                <div class="modal">
-                    <button class="close-searching-btn" type="button" searching-data-modal-close>
-                        <svg width="24" height="30">
-                            <use href="./assets/icons/search.svg#search"></use>
-                        </svg>
-                    </button>
-                    
-                </div>
-            </div>
             <button class="menu__btn--open menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu mobile-list">
                 <svg width="28" height="14">
                     <use href="./assets/icons/burger-menu.svg#icon-menu_24px"></use>
                 </svg>
             </button>
+        </div>
+        <div class="backdrop is-hidden" searching-data-modal>
+            <div class="modal">
+                <button class="close-searching-btn" type="button" searching-data-modal-close>
+                    <svg width="24" height="30">
+                        <use href="./assets/icons/search.svg#search"></use>
+                    </svg>
+                </button>
+                <div class="container__search--input">
+                    <label>
+                        <svg class="input__serch--svg" width="24" height="30">
+                            <use href="./assets/icons/search.svg#search"></use>
+                        </svg>
+                        <input class="search-input" type="search" name="" placeholder="      search" id="">
+                    </label>
+                </div>
+            </div>
         </div>
         <div class="menu-container js-menu-container" id="mobile-menu">
             <button class="menu__btn--close menu-toggle js-close-menu">
