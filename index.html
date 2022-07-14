@@ -79,53 +79,69 @@
             </div>
         </div>
         <div class="menu-container js-menu-container" id="mobile-menu">
-            <button class="menu__btn--close menu-toggle js-close-menu">
-                <svg width="28" height="14">
-                    <use href="./assets/icons/burger-menu.svg#icon-menu_24px"></use>
-                </svg>
-            </button>
+            
+            <button onclick="disableScroll()">Prevent scroll</button>
+            <button onclick="enableScroll()">Allow scroll</button>
             <div class="container__mobile">
-                <ul>
-                    <li>
-                        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                            href on our web-site
+                <ul class="reference__list">
+                    <li class="reference__item">
+                        <a class="reference--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
+                            About us
                     </a>
                 </li>
-                    <li>
-                        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                            href on our web-site
+                    <li class="reference__item">
+                        <a class="reference--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
+                            Events
                     </a>
                 </li>
-                    <li>
-                        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                            href on our web-site
+                    <li class="reference__item">
+                        <a class="reference--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
+                            Nordic roaster
                     </a>
                 </li>
-                    <li>
-                        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                            href on our web-site
+                    <li class="reference__item">
+                        <a class="reference--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
+                            Results
+                    </a>
+                </li>
+                <li class="reference__item">
+                    <a class="reference--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
+                        Links
+                    </a>
+                </li>
+                <li class="reference__item">
+                    <a class="reference--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
+                        Contact
                     </a>
                 </li>
                 </ul>
-                <ul class="menu--list js-list-container" id="mobile-list">
-                    <li>
-                        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                            instagram
+                <ul class="menu__list js-list-container" id="mobile-list">
+                    <li class="menu__item">
+                        <a class="menu--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
+                            <svg width="25" height="15">
+                                <use href="./assets/icons/linkedin-white.svg#linkedin"></use>
+                            </svg>
                         </a>
                     </li>
-                    <li>
-                        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                            instagram
+                    <li class="menu__item">
+                        <a class="menu--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
+                            <svg width="25" height="15">
+                                <use href="./assets/icons/twitter-white.svg#twitter"></use>
+                            </svg>
                     </a>
                     </li>
-                    <li>
-                        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                            instagram
+                    <li class="menu__item">
+                        <a class="menu--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
+                            <svg width="25" height="15">
+                                <use href="./assets/icons/instagram-white.svg#instagram"></use>
+                            </svg>
                     </a>
                     </li>
-                    <li>
-                        <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-                            instagram
+                    <li class="menu__item">
+                        <a class="menu--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
+                            <svg width="25" height="15">
+                                <use href="./assets/icons/facebook-white.svg#facebook"></use>
+                            </svg>
                     </a>
                     </li>
                 </ul>
@@ -176,6 +192,7 @@
     </main>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/prevent-scroll.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
