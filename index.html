@@ -15,7 +15,7 @@
         BARISTA CUP
         </h1>
         <div class="hat__container--button">
-            <button class="btn--search" data-modal-open>
+            <button class="btn--search" data-modal-open   onclick="disableScroll()">
                 <svg width="24" height="30">
                     <use href="./assets/icons/search.svg#search"></use>
                 </svg>
@@ -32,7 +32,8 @@
         </div>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="close-searching-btn" type="button" data-modal-close>
+                <button class="close-searching-btn" type="button" data-modal-close 
+                onclick="enableScroll()">
                     <svg width="24" height="30">
                         <use href="./assets/icons/search.svg#search"></use>
                     </svg>
@@ -56,6 +57,7 @@
                         <p class="search--label">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod...
                         </p>
+                        <button class="search--btn" type="button" data-product-modal-open10></button>
                     </li>
                     <li class="search__item">
                         <b>
@@ -67,6 +69,7 @@
                         <p class="search--label">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod...
                         </p>
+                        <button class="search--btn" type="button" data-product-modal-open11></button>
                     </li>
                     <li class="search__item">
                         <b>
@@ -78,6 +81,7 @@
                         <p class="search--label">
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod...
                         </p>
+                        <button class="search--btn" type="button" data-product-modal-open12></button>
                     </li>
                 </ul>
             </div>

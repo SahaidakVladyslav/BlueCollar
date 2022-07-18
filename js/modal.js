@@ -25,6 +25,11 @@
     openModalBtn7: document.querySelector('[data-product-modal-open7]'),
     openModalBtn8: document.querySelector('[data-product-modal-open8]'),
     openModalBtn9: document.querySelector('[data-product-modal-open9]'),
+    
+    openModalBtn10: document.querySelector('[data-product-modal-open10]'),
+    openModalBtn11: document.querySelector('[data-product-modal-open11]'),
+    openModalBtn12: document.querySelector('[data-product-modal-open12]'),
+
     closeModalBtn: document.querySelector('[data-product-modal-close]'),
     modal: document.querySelector('[data-product-modal]'),
   };
@@ -39,6 +44,10 @@
   refs.openModalBtn7.addEventListener('click', toggleModal);
   refs.openModalBtn8.addEventListener('click', toggleModal);
   refs.openModalBtn9.addEventListener('click', toggleModal);
+  refs.openModalBtn10.addEventListener('click', toggleModal);
+  refs.openModalBtn11.addEventListener('click', toggleModal);
+  refs.openModalBtn12.addEventListener('click', toggleModal);
+
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {

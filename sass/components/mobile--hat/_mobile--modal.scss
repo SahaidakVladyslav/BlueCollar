@@ -166,6 +166,7 @@
     color: #ffffff;
 }
 .search__item {
+    position: relative;
     padding-left: 8vw;
     padding-right: 8vw;
     &:not(:last-child) {
@@ -180,6 +181,16 @@
 .search--label {
     padding-bottom: 15px;
     border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.5);
+}
+.search--btn {
+    z-index: 1;
+    border: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
 }
 
 // media screen section (fix)
