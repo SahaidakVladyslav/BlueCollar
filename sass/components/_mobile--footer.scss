@@ -1,0 +1,85 @@
+footer {
+    background-color: $color-dark;
+    color: $color-white;
+}
+.cellar--logo {
+    width: 100vw;
+    padding: 20px;
+}
+.cellar__list--link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.cellar--title {
+    padding-top: 30px;
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    border-top: 1px solid $color-darkgrey;
+}
+.cellar--label {
+    color: $color-darkgrey;
+    width: 123px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+}
+.cellar--text {
+    width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 40px;
+}
+.instagram__container {
+    padding: 20px;
+}
+.cellar--cutline {
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+}
+.cellar__list--instagram {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cellar__instagram--item {
+    padding: 5px;
+}
+.cellar__orient {
+    padding: 20px;
+}
+.orient--title {
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+.orient--logo {
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+}
+.orient__list {
+    list-style: none;
+}
+.orient--item {
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+    &:not(:last-child) {
+        margin-bottom: 5px;
+    }
+}
+.orient--link {
+    text-decoration: none;
+    color: $color-darkgrey;
+    &:hover,
+    &:focus {
+        color: blueviolet;
+    }
+}
