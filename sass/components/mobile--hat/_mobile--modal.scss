@@ -1,3 +1,4 @@
+@media screen and (min-width: 200px) {
 
 .menu-container {
     z-index: 1;
@@ -191,6 +192,10 @@
     width: 100%;
     height: 100%;
     opacity: 0;
+    cursor: pointer;
+}
+.btn__search--span {
+    display: none;
 }
 
 // media screen section (fix)
@@ -235,4 +240,5 @@
         top: -14%;
         right: -0.1%;
     }
+}
 }
