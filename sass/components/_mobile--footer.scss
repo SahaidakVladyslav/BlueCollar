@@ -11,6 +11,11 @@ footer {
     justify-content: center;
     margin-bottom: 30px;
 }
+.cellar--item {
+    &:not(:last-child) {
+        margin-right: 15px;
+    }
+}
 .cellar--title {
     padding-top: 30px;
     width: max-content;
@@ -42,9 +47,11 @@ footer {
     margin-bottom: 15px;
 }
 .cellar__list--instagram {
+    max-width: 255px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 .cellar__instagram--item {
     padding: 5px;

@@ -464,7 +464,7 @@ b {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-right: 40px;
   width: 100vw;
   height: 10vh;
@@ -618,25 +618,39 @@ body {
   .slider--label {
     position: absolute;
     bottom: 0;
-    right: 22.4%;
-    display: block;
+    right: 12.5%;
     margin-right: auto;
     margin-left: auto;
-    width: 55vw;
+    width: 75vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     background-color: #000000;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(99%, #000000), color-stop(99%, #ffffff), to(#ffffff));
     background-image: linear-gradient(to bottom, #000000 0%, #000000 99%, #ffffff 99%, #ffffff 100%);
     color: #ffffff;
     text-align: center;
   }
-  .slider--label--test {
+  .slider--label > span {
+    display: block;
+    width: inherit;
+    height: 9px;
+  }
+  .slider--text {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     color: #ffffff;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(1%, #ffffff), color-stop(1%, #000000), to(#000000));
     background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 1%, #000000 1%, #000000 100%);
-    width: 55vw;
+    width: 75vw;
+    height: 55px;
   }
   .hero__container--slider.swiper.mySwiper {
     z-index: 0;
@@ -646,17 +660,30 @@ body {
   }
 }
 .article__slider--item {
-  padding-left: 25px;
-  padding-right: 45px;
   background-color: #ffffff;
 }
 
 .article__slider--img {
+  width: 273px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 25px;
   margin-bottom: 15px;
 }
 
+.article__slider--title {
+  width: 273px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .article__slider--data {
+  width: 273px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 5px;
   margin-bottom: 5px;
   color: #707070;
@@ -664,13 +691,23 @@ body {
 
 .article__slider--label {
   max-width: 273px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.article__clider--btn--container {
+  width: 273px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .article__slider--btn {
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: #ffffff;
@@ -684,6 +721,7 @@ body {
 }
 
 .article__slider--coordination {
+  width: 80vw;
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 25px;
@@ -754,8 +792,19 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.product__modal--img--container {
+  background-image: url(.././/././../././/.///../assets/images/posts/Post__thumbnail-4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 220px;
+  margin-bottom: 20px;
+}
+
 .product__modal--img {
   width: 100vw;
+  height: 220px;
   margin-bottom: 20px;
 }
 
@@ -857,7 +906,9 @@ body {
 }
 
 .sponsor--title {
-  width: 450px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 55px;
@@ -868,17 +919,15 @@ body {
     width: 230px;
   }
 }
-@media screen and (min-width: 450px) and (max-width: 550px) {
-  .sponsor--title {
-    width: 330px;
-  }
-}
 .sponsor--list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 320px) and (max-width: 385px) {
@@ -936,6 +985,10 @@ footer {
   margin-bottom: 30px;
 }
 
+.cellar--item:not(:last-child) {
+  margin-right: 15px;
+}
+
 .cellar--title {
   padding-top: 30px;
   width: -webkit-max-content;
@@ -976,14 +1029,14 @@ footer {
 }
 
 .cellar__list--instagram {
+  max-width: 255px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .cellar__instagram--item {

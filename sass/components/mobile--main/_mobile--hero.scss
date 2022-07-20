@@ -27,11 +27,13 @@
     .slider--label {
         position: absolute;
         bottom: 0;
-        right: 22.4%;
-        display: block;
+        right: 12.5%;
         margin-right: auto;
         margin-left: auto;
-        width: 55vw;
+        width: 75vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
         background-color: $color-dark;
         background-image: linear-gradient(to bottom,
             #000000 0%,
@@ -40,8 +42,13 @@
             #ffffff 100%);
         color: $color-white;
         text-align: center;
+        & > span {
+            display: block;
+            width: inherit;
+            height: 9px;
+        }
     }
-    .slider--label--test {
+    .slider--text {
         text-align: center;
         margin-right: auto;
         margin-left: auto;;
@@ -51,7 +58,8 @@
             #ffffff 1%,
             #000000 1%,
             #000000 100%);
-            width: 55vw;
+            width: 75vw;
+            height: 55px;
     }
     .hero__container--slider.swiper.mySwiper {
         z-index: 0;
