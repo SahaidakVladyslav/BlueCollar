@@ -2,6 +2,9 @@
 nav {
     display: none;
 }
+  .backdrop__desktop {
+    display: none;
+  }
 .menu-container {
     z-index: 1;
     position: fixed;

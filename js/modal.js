@@ -8,6 +8,7 @@
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
+
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
   }
@@ -33,6 +34,11 @@
     openModalBtn13: document.querySelector('[data-product-modal-open13]'),
     openModalBtn14: document.querySelector('[data-product-modal-open14]'),
     openModalBtn15: document.querySelector('[data-product-modal-open15]'),
+    
+    openModalBtn16: document.querySelector('[data-product-modal-open16]'),
+    openModalBtn17: document.querySelector('[data-product-modal-open17]'),
+    openModalBtn18: document.querySelector('[data-product-modal-open18]'),
+
 
     closeModalBtn: document.querySelector('[data-product-modal-close]'),
     modal: document.querySelector('[data-product-modal]'),
@@ -54,6 +60,10 @@
   refs.openModalBtn13.addEventListener('click', toggleModal);
   refs.openModalBtn14.addEventListener('click', toggleModal);
   refs.openModalBtn15.addEventListener('click', toggleModal);
+  
+  refs.openModalBtn16.addEventListener('click', toggleModal);
+  refs.openModalBtn17.addEventListener('click', toggleModal);
+  refs.openModalBtn18.addEventListener('click', toggleModal);
 
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
@@ -62,3 +72,18 @@
   }
 })();
 // 
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-desktop-modal-open]'),
+    closeModalBtn: document.querySelector('[data-desktop-modal-close]'),
+    modal: document.querySelector('[data-desktop-modal]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();

@@ -1,0 +1,20 @@
+@media screen and (min-width: 1200px) {
+    .hero {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1520px;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 1) 37%, rgba(255, 255, 255, 1) 80%, rgba(0, 0, 0, 1) 80%);    
+    }
+ .slider--item {
+    & > img {
+        width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+ }
+ .slider--label {
+        
+ }
+ 
+}

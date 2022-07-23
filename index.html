@@ -160,6 +160,42 @@
             </div>
         </div>
         <nav>
+            <ul class="navigation__menu__list">
+                <li class="navigation__menu__item">
+                    <a class="navigation__menu--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
+                        <svg width="25" height="15">
+                            <use href="./assets/icons/linkedin-white.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="navigation__menu__item">
+                    <a class="navigation__menu--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
+                        <svg width="25" height="15">
+                            <use href="./assets/icons/twitter-white.svg#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="navigation__menu__item">
+                    <a class="navigation__menu--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
+                        <svg width="25" height="15">
+                            <use href="./assets/icons/instagram-white.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="navigation__menu__item">
+                    <a class="navigation__menu--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
+                        <svg width="25" height="15">
+                            <use href="./assets/icons/facebook-white.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <button class="btn--search--desktop" data-desktop-modal-open>
+                <svg width="24" height="30">
+                    <use href="./assets/icons/search.svg#search"></use>
+                </svg>
+                <span class="btn__search--span">search</span>
+            </button>
             <ul class="navigation__list">
                 <li class="navigation__item">
                     <a class="navigation--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
@@ -192,36 +228,60 @@
                     </a>
                 </li>
             </ul>
-            <ul class="navigation__menu__list">
-                <li class="navigation__menu__item">
-                    <a class="navigation__menu--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
-                        <svg width="25" height="15">
-                            <use href="./assets/icons/linkedin-white.svg#linkedin"></use>
+            <div class="backdrop__desktop is-hidden" data-desktop-modal>
+                <div class="desktop-modal">
+                    <button class="close-searching-btn"
+                    type="button" 
+                    data-desktop-modal-close>
+                        <svg width="24" height="30">
+                            <use href="./assets/icons/search.svg#search"></use>
                         </svg>
-                    </a>
-                </li>
-                <li class="navigation__menu__item">
-                    <a class="navigation__menu--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
-                        <svg width="25" height="15">
-                            <use href="./assets/icons/twitter-white.svg#twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="navigation__menu__item">
-                    <a class="navigation__menu--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
-                        <svg width="25" height="15">
-                            <use href="./assets/icons/instagram-white.svg#instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="navigation__menu__item">
-                    <a class="navigation__menu--link" href="http://google.com" target="_blank" rel="noopener noreferrer">
-                        <svg width="25" height="15">
-                            <use href="./assets/icons/facebook-white.svg#facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+                    </button>
+                    <div class="container__desktop--input">
+                        <label>
+                            <input class="desktop-input" type="search" name="search" placeholder="  Wonderful" id="#">
+                        </label>
+                    </div>
+                    <ul class="search__list">
+                        <li class="search__item">
+                            <b>
+                                Wonderful Copenhagen 2021
+                            </b>
+                            <p class="search__label--data">
+                                Published 12/07/2021
+                            </p>
+                            <p class="search--label">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod...
+                            </p>
+                            <button class="search--btn" type="button" data-product-modal-open16></button>
+                        </li>
+                        <li class="search__item">
+                            <b>
+                                Wonderful Copenhagen 2021
+                            </b>
+                            <p class="search__label--data">
+                                Published 12/07/2021
+                            </p>
+                            <p class="search--label">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod...
+                            </p>
+                            <button class="search--btn" type="button" data-product-modal-open17></button>
+                        </li>
+                        <li class="search__item">
+                            <b>
+                                Wonderful Copenhagen 2021
+                            </b>
+                            <p class="search__label--data">
+                                Published 12/07/2021
+                            </p>
+                            <p class="search--label">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod...
+                            </p>
+                            <button class="search--btn" type="button" data-product-modal-open18></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
