@@ -586,6 +586,9 @@ body {
 }
 
 @media screen and (min-width: 320px) and (max-width: 1199px) {
+  .my-black-svg {
+    display: none;
+  }
   .slider--img {
     width: 100vw;
     height: auto;
@@ -1298,5 +1301,71 @@ footer {
     width: 1200px;
     margin-right: auto;
     margin-left: auto;
+  }
+  .slider--label {
+    position: absolute;
+    bottom: 0;
+    left: 270px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 5px;
+    width: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    background-color: #000000;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(99%, #000000), color-stop(99%, #ffffff), to(#ffffff));
+    background-image: linear-gradient(to bottom, #000000 0%, #000000 99%, #ffffff 99%, #ffffff 100%);
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+  }
+  .slider--label > span {
+    display: block;
+    width: inherit;
+    height: 50px;
+  }
+  .slider__container--text {
+    position: relative;
+    width: 1520px;
+    min-height: 105px;
+  }
+  .slider--text {
+    position: absolute;
+    left: 270px;
+    text-align: center;
+    color: #ffffff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(1%, #ffffff), color-stop(1%, #000000), to(#000000));
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 1%, #000000 1%, #000000 100%);
+    width: 600px;
+    height: 65px;
+    font-size: 25px;
+  }
+  .slider--btn {
+    background-color: #ffffff;
+  }
+  .swiper-button-next {
+    width: 30px;
+    right: 160px;
+    top: 98%;
+  }
+  .swiper-button-prev {
+    width: 30px;
+    left: 1280px;
+    top: 97.9%;
+  }
+  .my-svg {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  article {
+    background-color: tomato;
   }
 }
