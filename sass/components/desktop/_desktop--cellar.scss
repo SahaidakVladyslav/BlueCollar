@@ -1,0 +1,59 @@
+@media screen and (min-width: 1200px) {
+    .cellar {
+        max-width: 1520px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px 210px;
+    }
+    .cellar__container--logo {
+        display: flex;
+        padding-bottom: 20px;
+    }
+    .cellar--logo {
+        width: 486px;
+    }
+    .cellar__list--link {
+        margin: 0;
+        margin-left: auto;
+    }
+    .cellar--item {
+        padding-top: 30px;
+    }
+    .cellar__container--content {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        border-top: 1px solid $color-darkgrey;
+    }
+    .cellar--title {
+        border-top: none;
+        width: max-content;
+        margin-left: 0px;
+    }
+    .cellar--label {
+        width: max-content;
+        margin-left: 0px;
+        font-size: 18px;
+    }
+    .cellar--text {
+        width: 350px;
+    }
+    .cellar--cutline {
+        margin-left: 0;
+    }
+    .orient--logo {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .orient--logo,
+    .orient--item {
+        margin-left: 0;
+    }
+    .orient--item {
+        &:nth-child(1) {
+            width: 130px;
+            line-height: 1.4;
+        }
+    }
+}

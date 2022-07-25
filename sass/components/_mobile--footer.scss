@@ -26,10 +26,15 @@ footer {
 }
 .cellar--label {
     color: $color-darkgrey;
-    width: 123px;
+    width: 130px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 15px;
+    text-align: center;
+}
+.cellar__label--span {
+    display: block;
+    width: 1px;
 }
 .cellar--text {
     width: 80vw;
@@ -60,10 +65,11 @@ footer {
     padding: 20px;
 }
 .orient--title {
-    width: max-content;
+    display: block;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 20px;
+    text-align: center;
 }
 .orient--logo {
     width: max-content;

@@ -1,0 +1,28 @@
+@media screen and (min-width: 1200px) {
+    .sponsor {
+        max-width: 1500px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .sponsor--title {
+        width: 975px;
+        padding-top: 30px;
+        border-top: 1px solid $color-lightgrey;
+        text-align: center;
+    }
+    .sponsor--list {
+        width: 1135px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .sponsor--item  {
+        padding: 1px;
+        & > img {
+            border: 1px solid $color-lightgrey;
+        }
+        &:nth-child(20) {
+            display: none;
+        }
+    }
+    
+}
