@@ -1594,11 +1594,17 @@ footer {
     margin-left: 0px;
     font-size: 18px;
   }
+  .cellar__label--span {
+    display: none;
+  }
   .cellar--text {
     width: 350px;
   }
   .cellar--cutline {
     margin-left: 0;
+  }
+  .orient--title {
+    text-align: start;
   }
   .orient--logo {
     margin-top: 10px;
@@ -1610,7 +1616,7 @@ footer {
     margin-left: 0;
   }
   .orient--item:nth-child(1) {
-    width: 130px;
+    width: 140px;
     line-height: 1.4;
   }
 }
